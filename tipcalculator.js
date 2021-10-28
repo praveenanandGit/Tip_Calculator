@@ -9,21 +9,22 @@ btn.addEventListener('click',function(){
     //Check bill amount can't be zero or negative
     if(Bill_amount<=0)
     {
-        alert("Amount can not be 0/Negative");
+        alert("Amount only in postive number");
     }
     let tip_percent = document.getElementById('tip').value;
 
     //Check tip percentage can't be zero or negative
-    if(tip_percent<=0)
+    if(tip_percent<0)
     {
-        alert("Tip% can not be 0/Negative");
+        alert("Tip% not in negative number");
     }
 
     //Check people can't be zero or negative
     let no_of_people = document.getElementById('no_pep').value;
-    if(no_of_people<=0)
+    
+    if(no_of_people<0)
     {
-        alert("People can not be 0/Negative");
+        alert("People only in positive number");
     } 
 
     // Output based on user input
